@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       args '--network docker-jenkins_jenkinsnet'
-      image 'openjdk:15'
+      image '3.6.3-openjdk-15'
     }
 
   }
