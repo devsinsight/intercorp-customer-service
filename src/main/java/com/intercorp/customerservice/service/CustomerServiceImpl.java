@@ -3,14 +3,10 @@ package com.intercorp.customerservice.service;
 import com.intercorp.customerservice.model.Customer;
 import com.intercorp.customerservice.repository.CustomerRepository;
 import org.apache.commons.math3.stat.descriptive.moment.Mean;
-import org.apache.commons.math3.stat.descriptive.rank.Median;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
-
-import javax.print.attribute.standard.Media;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class CustomerServiceImpl implements CustomerService {

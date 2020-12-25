@@ -1,5 +1,6 @@
 package com.intercorp.customerservice.repository;
 
+import com.intercorp.customerservice.CustomerServiceApplicationTests;
 import com.intercorp.customerservice.model.Customer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +15,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-public class CustomerRepositoryIntegrationTest {
+public class CustomerRepositoryIntegrationTest extends CustomerServiceApplicationTests {
 
     @Autowired
     private CustomerRepository customerRepository;
