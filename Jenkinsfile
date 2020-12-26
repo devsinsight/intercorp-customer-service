@@ -20,6 +20,7 @@ pipeline {
 
     stage('Docker Build') {
       steps {
+        sh 'sudo dockerd'
         sh 'docker build .'
       }
     }
