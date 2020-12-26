@@ -90,6 +90,23 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>1.2.2</version>
+				<configuration>
+				  <imageName>customer.service.image</imageName>
+				  <dockerDirectory>.</dockerDirectory>
+				  <entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
+				  <resources>
+					 <resource>
+					   <targetPath>/</targetPath>
+					   <directory>${project.build.directory}</directory>
+					   <include>${project.build.finalName}.jar</include>
+					 </resource>
+				  </resources>
+				</configuration>
+			  </plugin>
 		</plugins>
 	</build>
 
