@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('Docker Build') {
+      steps {
+        sh 'docker build -t customer-service-repository:1.0 .'
+      }
+    }
+
   }
 }
