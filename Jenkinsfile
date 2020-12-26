@@ -24,6 +24,12 @@ pipeline {
       }
     }
 
+    stage('Docker Tag') {
+      steps {
+        sh 'mvn dockerfile:tag'
+      }
+    }
+
     stage('Docker Push') {
       steps {
         sh 'mvn dockerfile:push'
