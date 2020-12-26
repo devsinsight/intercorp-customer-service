@@ -115,7 +115,7 @@
 				<configuration>
 					<username>esanstudent</username>
 					<password>Pass@w0rd1</password>
-					<repository>orgcompany/customer-service-repository</repository>
+					<repository>esanstudent/customer-service-repository</repository>
 					<tag>latest</tag>
 					<useMavenSettingsForAuth>false</useMavenSettingsForAuth>
 					<buildArgs>
