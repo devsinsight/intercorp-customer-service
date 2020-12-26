@@ -26,7 +26,7 @@ pipeline {
 
       }
       steps {
-        sh 'docker build -t customer-service-repository:1.0 .'
+        sh 'docker build .'
       }
     }
 
