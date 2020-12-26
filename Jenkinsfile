@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('Docker Push') {
+      steps {
+        sh 'aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 843444704701.dkr.ecr.us-west-1.amazonaws.com'
+      }
+    }
+
   }
 }
