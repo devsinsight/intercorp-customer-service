@@ -113,8 +113,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<username>${docker.hub.user.name}</username>
-					<password>${docker.hub.password}</password>
+					<username>esanstudent</username>
+					<password>Pass@w0rd1</password>
 					<repository>orgcompany/customer-service-repository</repository>
 					<tag>latest</tag>
 					<useMavenSettingsForAuth>false</useMavenSettingsForAuth>
