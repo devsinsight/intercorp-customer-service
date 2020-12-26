@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'maven:3.6.3-openjdk-15'
-      args '--network bridge'
+      args '--network intercorp_network'
     }
 
   }
