@@ -19,6 +19,12 @@ pipeline {
     }
 
     stage('Docker Build') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
+
+      }
       steps {
         sh 'docker build -t customer-service-repository:1.0 .'
       }
