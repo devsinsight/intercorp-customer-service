@@ -19,14 +19,8 @@ pipeline {
     }
 
     stage('Docker Build') {
-      agent {
-        dockerfile {
-          filename 'Dockerfile'
-        }
-
-      }
       steps {
-        sh 'echo hello'
+        sh 'mvn clean package docker:build'
       }
     }
 
