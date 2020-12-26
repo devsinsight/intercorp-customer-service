@@ -19,9 +19,14 @@ pipeline {
     }
 
     stage('Docker Build') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
+
+      }
       steps {
-        sh 'sudo dockerd'
-        sh 'docker build .'
+        sh 'echo hello'
       }
     }
 
