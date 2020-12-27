@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Servico de Clietnes XYZ",
+    "description": "Servico de Clietnes",
     "version": "1.0.0",
     "title": "Customer Service API",
     "termsOfService": "https://github.com/devsinsight",
